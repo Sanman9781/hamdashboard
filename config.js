@@ -21,27 +21,6 @@ var aURL = [
   [
     "#ff0000",
     "Load Cfg",
-    "",
-    1,
-    "R"
-  ],
-  [
-    "#ff0000",
-    "Load Cfg",
-    "",
-    1,
-    "R"
-  ],
-  [
-    "#ff0000",
-    "Load Cfg",
-    "",
-    1,
-    "R"
-  ],
-  [
-    "#ff0000",
-    "Load Cfg",
     "#",
     1,
     "L"
@@ -120,6 +99,13 @@ var aURL = [
     "#2196f3",
     "EDIS Event Map",
     "https://rsoe-edis.org/eventMap",
+    1,
+    "R"
+  ],
+  [
+    "#2196f3",
+    "MoDot Traveler Map",
+    "https://traveler.modot.org/map/",
     1,
     "R"
   ]
@@ -210,7 +196,7 @@ var aIMG = [
     "http://www.findu.com/cgi-bin/twp67.cgi?call=WX9WTF&units=english&led=0"
   ],
   [
-    "Weatherstar 4000",
+    "",
     "iframe|http://192.168.50.128:8080/?hazards-checkbox=true&current-weather-checkbox=true&latest-observations-checkbox=true&hourly-checkbox=false&hourly-graph-checkbox=true&travel-checkbox=false&regional-forecast-checkbox=true&local-forecast-checkbox=true&extended-forecast-checkbox=true&almanac-checkbox=true&spc-outlook-checkbox=true&radar-checkbox=true&settings-wide-checkbox=false&settings-kiosk-checkbox=true&settings-scanLines-checkbox=true&settings-speed-select=1.00&settings-units-select=us&settings-mediaVolume-select=0.25&latLonQuery=64012%2C+Belton%2C+MO%2C+USA&latLon=%7B%22lat%22%3A38.7995%2C%22lon%22%3A-94.5348%7D"
   ],
   [
@@ -228,8 +214,12 @@ var aIMG = [
     "https://forecast.weather.gov/meteograms/Plotter.php?lat=38.771&lon=-94.55&wfo=EAX&zcode=MOZ043&gset=18&gdiff=3&unit=0&tinfo=CY6&ahour=0&pcmd=11101111110000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6"
   ],
   [
-    "",
-    ""
+    "APRS",
+    "iframe|https://aprs.fi/#!lat=38.7715&lng=-94.55083"
+  ],
+  [
+    "Fox Weather Stream",
+    "iframe|https://www.youtube-nocookie.com/embed/wt6SIE7BXS8?autoplay=1&mute=1"
   ],
   [
     "",
@@ -240,19 +230,31 @@ var aIMG = [
     ""
   ],
   [
-    "",
-    ""
+    [
+      "I-49 S @ N of 163rd Street",
+      "I-49 N @ 58 Hwy",
+      "I-49 N @ Hwy J",
+      "I-49 S @ S of Mo-2"
+    ],
+    "https://imgproxy.windy.com/_/full/plain/current/1648674067/original.jpg",
+    "https://imgproxy.windy.com/_/full/plain/current/1648674007/original.jpg",
+    "https://imgproxy.windy.com/_/full/plain/current/1648676489/original.jpg",
+    "https://imgproxy.windy.com/_/full/plain/current/1648676520/original.jpg"
   ],
   [
-    "",
-    ""
+    [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=CDT&sector=CENTMISSVLY&element=pop12&n=1",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=CDT&sector=CENTMISSVLY&element=totalsvrprob&n=1",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=CDT&sector=CENTMISSVLY&element=convoutlook&n=1",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=CDT&sector=CENTMISSVLY&element=sky&n=4"
   ],
   [
-    "",
-    ""
-  ],
-  [
-    "Test",
+    "Space Weather Stream",
     "iframe|https://www.youtube-nocookie.com/embed/ToUVD_JdKvM?autoplay=1&mute=1"
   ]
 ];
@@ -272,8 +274,8 @@ var tileDelay = [
   10000,
   0,
   5000,
-  5000,
-  5000,
+  0,
+  0,
   5000,
   5000,
   5000,
